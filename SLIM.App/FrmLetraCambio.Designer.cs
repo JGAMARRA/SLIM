@@ -83,6 +83,7 @@
             // 
             // btnImprimir
             // 
+            this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImprimir.Location = new System.Drawing.Point(554, 185);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(100, 23);
@@ -93,6 +94,7 @@
             // 
             // btnNuevo
             // 
+            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.Location = new System.Drawing.Point(448, 185);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 23);
@@ -104,6 +106,7 @@
             // cboMoneda
             // 
             this.cboMoneda.BackColor = System.Drawing.Color.White;
+            this.cboMoneda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cboMoneda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMoneda.FormattingEnabled = true;
             this.cboMoneda.Items.AddRange(new object[] {
@@ -116,6 +119,7 @@
             // 
             // dtpFechaGiro
             // 
+            this.dtpFechaGiro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dtpFechaGiro.Location = new System.Drawing.Point(221, 42);
             this.dtpFechaGiro.Name = "dtpFechaGiro";
             this.dtpFechaGiro.Size = new System.Drawing.Size(100, 20);
@@ -130,6 +134,7 @@
             this.txtImporte.TabIndex = 4;
             this.txtImporte.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtImporte.TextChanged += new System.EventHandler(this.txtImporte_TextChanged);
+            this.txtImporte.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtImporte_KeyPress);
             this.txtImporte.Leave += new System.EventHandler(this.txtImporte_Leave);
             // 
             // txtLugarGiro

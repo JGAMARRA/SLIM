@@ -23,6 +23,7 @@ namespace SLIM.App
             this.txtNumero.Text = "00000";
             this.txtReferenciaGirador.Text = "0000-000000";
             this.txtLugarGiro.Text = "LIMA";
+            this.dtpFechaGiro.Value = DateTime.Now;
             this.cboMoneda.SelectedIndex = 0;
             this.txtImporte.Clear();
             this.txtImporteLetras.Clear();
@@ -47,11 +48,7 @@ namespace SLIM.App
 
         private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
-            {
-                e.Handled = true;
-            }
-            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
             }
@@ -59,11 +56,11 @@ namespace SLIM.App
 
         private void txtReferenciaGirador_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.') && (e.KeyChar != '-'))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '-'))
             {
                 e.Handled = true;
             }
-            if ((e.KeyChar == '.') && (e.KeyChar != '-') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('-') > -1))
             {
                 e.Handled = true;
             }
@@ -80,9 +77,24 @@ namespace SLIM.App
         {
             string importe = this.txtImporte.Text.Trim();
             if (importe.Length == 0) return;
+            decimal result;
+            bool valid = Decimal.TryParse(importe, out result);
+            if (!valid) return;
             decimal valor = Convert.ToDecimal(importe);
             string numero = valor.ToString("n2");
             this.txtImporte.Text = numero;
+        }
+
+        private void txtImporte_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -92,7 +104,42 @@ namespace SLIM.App
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            //Validaciones
+            if(this.txtNumero.Text.Trim().Length == 0 || this.txtNumero.Text.Trim().Equals("00000"))
+            {
+                MessageBox.Show("Ingrese el Número", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.txtNumero.Focus();
+                return;
+            }
+            if (this.txtReferenciaGirador.Text.Trim().Length == 0 || this.txtReferenciaGirador.Text.Trim().Equals("0000-000000"))
+            {
+                MessageBox.Show("Ingrese la Referencia del Girador", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.txtReferenciaGirador.Focus();
+                return;
+            }
+            if (this.txtLugarGiro.Text.Length == 0)
+            {
+                MessageBox.Show("Ingrese el Lugar de Giro", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.txtLugarGiro.Focus();
+                return;
+            }
+            if (this.txtImporte.Text.Length == 0 || this.txtImporte.Text.Trim().Equals("."))
+            {
+                MessageBox.Show("Ingrese el Monto del Importe", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.txtImporte.Focus();
+                return;
+            }
+            if (this.txtAceptante.Text.Length == 0)
+            {
+                MessageBox.Show("Ingrese el Aceptante", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.txtAceptante.Focus();
+                return;
+            }
+            if (this.txtDomicilio.Text.Length == 0)
+            {
+                MessageBox.Show("Ingrese el Domicilio", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.txtDomicilio.Focus();
+                return;
+            }
         }
     }
 }
