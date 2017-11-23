@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SLIM.BusinessLogic
+namespace SLIM.DataAccess
 {
-    public class Class1
+    class LetraCambioDA
     {
     }
 }
