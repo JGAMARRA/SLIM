@@ -18,15 +18,31 @@ namespace SLIM.App
             InitializeComponent();
         }
 
-        private void FrmLetraCambio_Load(object sender, EventArgs e)
+        private void Nuevo()
         {
             this.txtNumero.Text = "00000";
             this.txtReferenciaGirador.Text = "0000-000000";
             this.txtLugarGiro.Text = "LIMA";
             this.cboMoneda.SelectedIndex = 0;
+            this.txtImporte.Clear();
+            this.txtImporteLetras.Clear();
+            this.txtAceptante.Clear();
+            this.txtDomicilio.Clear();
+            this.txtNumero.Focus();
+        }
+
+        private void FrmLetraCambio_Load(object sender, EventArgs e)
+        {
             this.txtLugarGiro.CharacterCasing = CharacterCasing.Upper;
             this.txtAceptante.CharacterCasing = CharacterCasing.Upper;
             this.txtDomicilio.CharacterCasing = CharacterCasing.Upper;
+            this.Nuevo();
+        }
+
+        private void txtNumero_Leave(object sender, EventArgs e)
+        {
+            string numero = this.txtNumero.Text.Trim().PadLeft(5, '0');
+            this.txtNumero.Text = numero;
         }
 
         private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
@@ -55,16 +71,28 @@ namespace SLIM.App
 
         private void txtImporte_TextChanged(object sender, EventArgs e)
         {
-            string numero = this.txtImporte.Text.Trim();
-            this.txtImporteLetras.Text = NumeroLetras.Convertir(numero).ToUpper();
+            string importe = this.txtImporte.Text.Trim();
+            if (importe.Length == 0) return;
+            this.txtImporteLetras.Text = NumeroLetras.Convertir(importe).ToUpper();
         }
 
         private void txtImporte_Leave(object sender, EventArgs e)
         {
-            string texto = this.txtImporte.Text.Trim();
-            decimal importe = Convert.ToDecimal(texto);
-            string numero = importe.ToString("n2");
+            string importe = this.txtImporte.Text.Trim();
+            if (importe.Length == 0) return;
+            decimal valor = Convert.ToDecimal(importe);
+            string numero = valor.ToString("n2");
             this.txtImporte.Text = numero;
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            this.Nuevo();
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            //Validaciones
         }
     }
 }
