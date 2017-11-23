@@ -1,4 +1,5 @@
-﻿using SLIM.Utils;
+﻿using SLIM.App.Vistas;
+using SLIM.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -70,6 +71,9 @@ namespace SLIM.App
         {
             string importe = this.txtImporte.Text.Trim();
             if (importe.Length == 0) return;
+            decimal resultado;
+            bool valido = Decimal.TryParse(importe, out resultado);
+            if (!valido) return;
             this.txtImporteLetras.Text = NumeroLetras.Convertir(importe).ToUpper();
         }
 
@@ -77,9 +81,9 @@ namespace SLIM.App
         {
             string importe = this.txtImporte.Text.Trim();
             if (importe.Length == 0) return;
-            decimal result;
-            bool valid = Decimal.TryParse(importe, out result);
-            if (!valid) return;
+            decimal resultado;
+            bool valido = Decimal.TryParse(importe, out resultado);
+            if (!valido) return;
             decimal valor = Convert.ToDecimal(importe);
             string numero = valor.ToString("n2");
             this.txtImporte.Text = numero;
@@ -140,6 +144,8 @@ namespace SLIM.App
                 this.txtDomicilio.Focus();
                 return;
             }
+            var frm = new FrmLetraCambioVistaPrevia();
+            frm.ShowDialog();
         }
     }
 }

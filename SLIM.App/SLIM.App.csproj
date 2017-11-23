@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\FrmLetraCambioVistaPrevia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmLetraCambioVistaPrevia.Designer.cs">
+      <DependentUpon>FrmLetraCambioVistaPrevia.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmLetraCambio.resx">
       <DependentUpon>FrmLetraCambio.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +72,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\FrmLetraCambioVistaPrevia.resx">
+      <DependentUpon>FrmLetraCambioVistaPrevia.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -95,7 +104,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reportes\" />
-    <Folder Include="Vistas\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
