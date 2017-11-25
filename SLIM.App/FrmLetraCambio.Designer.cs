@@ -120,6 +120,7 @@
             // dtpFechaGiro
             // 
             this.dtpFechaGiro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dtpFechaGiro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaGiro.Location = new System.Drawing.Point(221, 42);
             this.dtpFechaGiro.Name = "dtpFechaGiro";
             this.dtpFechaGiro.Size = new System.Drawing.Size(100, 20);
