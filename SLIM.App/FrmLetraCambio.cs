@@ -120,28 +120,34 @@ namespace SLIM.App
                 this.txtReferenciaGirador.Focus();
                 return;
             }
-            if (this.txtLugarGiro.Text.Length == 0)
+            if (this.txtLugarGiro.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Ingrese el Lugar de Giro", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.txtLugarGiro.Focus();
                 return;
             }
-            if (this.txtImporte.Text.Length == 0 || this.txtImporte.Text.Trim().Equals("."))
+            if (this.txtImporte.Text.Trim().Length == 0 || this.txtImporte.Text.Trim().Equals("."))
             {
                 MessageBox.Show("Ingrese el Monto del Importe", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.txtImporte.Focus();
                 return;
             }
-            if (this.txtAceptante.Text.Length == 0)
+            if (this.txtAceptante.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Ingrese el Aceptante", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.txtAceptante.Focus();
                 return;
             }
-            if (this.txtDomicilio.Text.Length == 0)
+            if (this.txtDomicilio.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Ingrese el Domicilio", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.txtDomicilio.Focus();
+                return;
+            }
+            if (this.txtLocalidad.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Ingrese la Localidad", "Aviso del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.txtLocalidad.Focus();
                 return;
             }
             var frm = new FrmLetraCambioVistaPrevia();

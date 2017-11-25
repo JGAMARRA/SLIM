@@ -49,6 +49,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtLocalidad = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +68,9 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtLocalidad);
             this.groupBox1.Controls.Add(this.txtDomicilio);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtAceptante);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
@@ -76,7 +80,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(667, 219);
+            this.groupBox1.Size = new System.Drawing.Size(667, 257);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de Letra de Cambio";
@@ -84,10 +88,10 @@
             // btnImprimir
             // 
             this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnImprimir.Location = new System.Drawing.Point(554, 185);
+            this.btnImprimir.Location = new System.Drawing.Point(554, 224);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(100, 23);
-            this.btnImprimir.TabIndex = 10;
+            this.btnImprimir.TabIndex = 11;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
@@ -95,10 +99,10 @@
             // btnNuevo
             // 
             this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNuevo.Location = new System.Drawing.Point(448, 185);
+            this.btnNuevo.Location = new System.Drawing.Point(449, 224);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 23);
-            this.btnNuevo.TabIndex = 9;
+            this.btnNuevo.TabIndex = 10;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -129,7 +133,7 @@
             // txtImporte
             // 
             this.txtImporte.Location = new System.Drawing.Point(554, 42);
-            this.txtImporte.MaxLength = 7;
+            this.txtImporte.MaxLength = 12;
             this.txtImporte.Name = "txtImporte";
             this.txtImporte.Size = new System.Drawing.Size(100, 20);
             this.txtImporte.TabIndex = 4;
@@ -270,12 +274,29 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Número";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 182);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(53, 13);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Localidad";
+            // 
+            // txtLocalidad
+            // 
+            this.txtLocalidad.Location = new System.Drawing.Point(9, 198);
+            this.txtLocalidad.MaxLength = 500;
+            this.txtLocalidad.Name = "txtLocalidad";
+            this.txtLocalidad.Size = new System.Drawing.Size(645, 20);
+            this.txtLocalidad.TabIndex = 9;
+            // 
             // FrmLetraCambio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(689, 241);
+            this.ClientSize = new System.Drawing.Size(689, 281);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.Name = "FrmLetraCambio";
@@ -311,5 +332,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.TextBox txtLocalidad;
+        private System.Windows.Forms.Label label10;
     }
 }
