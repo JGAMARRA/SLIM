@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SLIM.DataAccess
+namespace SLIM.DataAccess.Facturacion
 {
-    class LetraCambioDA
+    class Class1
     {
     }
 }

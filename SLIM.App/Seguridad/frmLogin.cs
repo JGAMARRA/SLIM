@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SLIM.BusinessEntity.Seguridad;
+using SLIM.BusinessLogic.Seguridad;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SLIM.BusinessLogic;
-using SLIM.BusinessEntity;
+
+
 namespace SLIM.App
 {
     public partial class frmLogin : Form

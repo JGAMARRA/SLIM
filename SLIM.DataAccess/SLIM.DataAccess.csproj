@@ -41,9 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Facturacion\Class1.cs" />
     <Compile Include="SqlHelper.cs" />
-    <Compile Include="LetraCambioDA.cs" />
-    <Compile Include="LoginDA.cs" />
+    <Compile Include="Facturacion\LetraCambioDA.cs" />
+    <Compile Include="Seguridad\LoginDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sqlutil.cs" />
   </ItemGroup>
@@ -56,6 +57,10 @@
       <Project>{0b0b1e9a-82c2-40c1-ac06-08c2ecca0458}</Project>
       <Name>SLIM.Utils</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Almacen\" />
+    <Folder Include="Mantenimiento\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

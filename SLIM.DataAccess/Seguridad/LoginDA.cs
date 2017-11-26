@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SLIM.BusinessEntity.Seguridad;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -6,7 +7,8 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SLIM.BusinessEntity;
+
+
 namespace SLIM.DataAccess
 {
     public class LoginDA

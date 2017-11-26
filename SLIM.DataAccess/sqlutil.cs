@@ -1,4 +1,4 @@
-﻿using SLIM.BusinessEntity;
+﻿using SLIM.BusinessEntity.Seguridad;
 using System;
 using System.Collections.Generic;
 using System.Configuration;

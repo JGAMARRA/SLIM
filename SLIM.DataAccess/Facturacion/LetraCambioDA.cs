@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SLIM.BusinessEntity
+namespace SLIM.DataAccess.Facturacion
 {
-    class LetraCambioBE
+    class LetraCambioDA
     {
     }
 }

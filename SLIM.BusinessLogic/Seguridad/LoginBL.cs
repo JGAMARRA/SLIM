@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SLIM.DataAccess;
-using SLIM.BusinessEntity;
-namespace SLIM.BusinessLogic
+using SLIM.BusinessEntity.Seguridad;
+
+namespace SLIM.BusinessLogic.Seguridad
 {
     public class LoginBL
     {
