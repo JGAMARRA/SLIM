@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SLIM.DataAccess.Facturacion
+namespace SLIM.BusinessLogic.Facturacion
 {
-    class Class1
+    class DocumentoPagoDA
     {
     }
 }

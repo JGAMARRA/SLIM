@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Facturacion\Class1.cs" />
+    <Compile Include="Facturacion\DocumentoPagoDA.cs" />
     <Compile Include="SqlHelper.cs" />
     <Compile Include="Facturacion\LetraCambioDA.cs" />
     <Compile Include="Seguridad\LoginDA.cs" />

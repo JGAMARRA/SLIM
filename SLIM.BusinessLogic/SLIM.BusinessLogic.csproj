@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Facturacion\DocumentoPagoDA.cs" />
     <Compile Include="Facturacion\LetraCambioBL.cs" />
     <Compile Include="Seguridad\LoginBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

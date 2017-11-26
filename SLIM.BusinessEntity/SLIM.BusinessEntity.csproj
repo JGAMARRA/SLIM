@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Facturacion\DocumentoPago.cs" />
+    <Compile Include="Facturacion\DocumentoPagoDetalle.cs" />
     <Compile Include="Facturacion\LetraCambio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seguridad\Usuario.cs" />
