@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -11,15 +12,9 @@ namespace SLIM.DataAccess
     public class SqlHelper
     {
         // Internal members
-        protected string _connString = null;
         protected SqlConnection _conn = null;
         protected SqlTransaction _trans = null;
         protected bool _disposed = false;
-
-        /// <summary>
-        /// Sets or returns the connection string use by all instances of this class.
-        /// </summary>
-        public static string ConnectionString { get; set; }
 
         /// <summary>
         /// Returns the current SqlTransaction object or null if no transaction
@@ -32,24 +27,13 @@ namespace SLIM.DataAccess
         /// </summary>
         public SqlHelper()
         {
-            _connString = ConnectionString;
-            Connect();
-        }
-
-        /// <summary>
-        /// Constructure using connection string override
-        /// </summary>
-        /// <param name="connString">Connection string for this instance</param>
-        public SqlHelper(string connString)
-        {
-            _connString = connString;
             Connect();
         }
 
         // Creates a SqlConnection using the current connection string
         protected void Connect()
         {
-            _conn = new SqlConnection(_connString);
+            _conn = new SqlConnection(ConfigurationManager.AppSettings["cnx"].ToString());
             _conn.Open();
         }
 

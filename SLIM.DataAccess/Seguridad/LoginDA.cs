@@ -22,7 +22,7 @@ namespace SLIM.DataAccess
             new SqlParameter() {ParameterName = "@clave", SqlDbType = SqlDbType.VarChar, Direction = ParameterDirection.Input, Value = clave},
           //  new SqlParameter() {ParameterName = "@OutValue", SqlDbType = SqlDbType.Int, Direction = ParameterDirection.Output},
             };
-            List<object> lobjs =sqlutil.executeStoredProcedure("Usp_SelectById_Usuario", parameters, "userDB");
+            List<object> lobjs =SqlUtil.executeStoredProcedure("Usp_SelectById_Usuario", parameters, "userDB");
             if (lobjs.Count>0) {
                 oUsuario = new Usuario();
             oUsuario.Id = Int32.Parse(lobjs[0].ToString());

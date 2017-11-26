@@ -21,25 +21,26 @@ namespace SLIM.App
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnIngresar_Click(object sender, EventArgs e)
         {
-            Usuario oUsuario=oLogin.GetUsuario(txtUsuario.Text.TrimEnd(),txtClave.Text.TrimEnd());
+            Usuario oUsuario = oLogin.GetUsuario(txtUsuario.Text.TrimEnd(), txtClave.Text.TrimEnd());
             if (oUsuario != null)
             {
                 Form frm = new frmPrincipal();
                 frm.ShowDialog();
+                this.Close();
             }
-            else {
+            else
+            {
                 MessageBox.Show("Usuario no existe",
-    "SLIM",
-    MessageBoxButtons.OK,
-    MessageBoxIcon.Exclamation,
-    MessageBoxDefaultButton.Button1);
+                "SLIM",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Exclamation,
+                MessageBoxDefaultButton.Button1);
             }
-            
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }

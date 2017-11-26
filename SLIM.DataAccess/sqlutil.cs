@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SLIM.DataAccess
 {
-    class sqlutil
+    class SqlUtil
     {
         //public static void executeStoredProcedure(string SPName, Dictionary<string, object> parameters, string connectionStringName)
         public static List<object> executeStoredProcedure(string SPName, SqlParameter[] parameters, string connectionStringName)

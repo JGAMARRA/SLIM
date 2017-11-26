@@ -46,5 +46,12 @@ namespace SLIM.App
             //Form frm = new frmGenerarGuia();
             //frm.ShowDialog();
         }
+
+        private void generarLetraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLetraCambio frm = new FrmLetraCambio();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

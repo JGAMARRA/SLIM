@@ -28,94 +28,124 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtClave = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnIngresar = new System.Windows.Forms.Button();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // groupBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "usuario";
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.txtClave);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.btnSalir);
+            this.groupBox1.Controls.Add(this.btnIngresar);
+            this.groupBox1.Controls.Add(this.txtUsuario);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(309, 156);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Datos de Login";
             // 
-            // txtUsuario
+            // pictureBox1
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(120, 35);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
-            this.txtUsuario.TabIndex = 1;
-            this.txtUsuario.Text = "slim";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(64, 101);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(145, 101);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Salir";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.pictureBox1.Image = global::SLIM.App.Properties.Resources.User_Login;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 130);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // txtClave
             // 
-            this.txtClave.Location = new System.Drawing.Point(120, 61);
+            this.txtClave.Location = new System.Drawing.Point(203, 62);
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(100, 20);
-            this.txtClave.TabIndex = 5;
+            this.txtClave.TabIndex = 11;
             this.txtClave.Text = "123";
             this.txtClave.UseSystemPasswordChar = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 61);
+            this.label2.Location = new System.Drawing.Point(163, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "clave";
+            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Clave";
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(228, 102);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 9;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnIngresar
+            // 
+            this.btnIngresar.Location = new System.Drawing.Point(147, 102);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(75, 23);
+            this.btnIngresar.TabIndex = 8;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(203, 36);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuario.TabIndex = 7;
+            this.txtUsuario.Text = "slim";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(154, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Usuario";
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(280, 165);
-            this.Controls.Add(this.txtClave);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(334, 181);
+            this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login del Sistema";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtClave;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnIngresar;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label label1;
     }
 }

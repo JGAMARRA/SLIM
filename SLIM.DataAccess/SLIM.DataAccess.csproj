@@ -46,7 +46,7 @@
     <Compile Include="Facturacion\LetraCambioDA.cs" />
     <Compile Include="Seguridad\LoginDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sqlutil.cs" />
+    <Compile Include="SqlUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SLIM.BusinessEntity\SLIM.BusinessEntity.csproj">
