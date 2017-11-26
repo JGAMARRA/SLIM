@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SLIM.BusinessEntity.Facturacion
+namespace SLIM.BusinessEntity.Mantenimiento
 {
-    class DocumentoPagoDetalle
+    class Periodo
     {
     }
 }
