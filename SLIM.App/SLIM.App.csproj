@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmLetraCambio.cs">
+    <Compile Include="Facturacion\frmLetraCambio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLetraCambio.Designer.cs">
-      <DependentUpon>FrmLetraCambio.cs</DependentUpon>
+    <Compile Include="Facturacion\frmLetraCambio.Designer.cs">
+      <DependentUpon>frmLetraCambio.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +72,8 @@
     <Compile Include="Vistas\FrmLetraCambioVistaPrevia.Designer.cs">
       <DependentUpon>FrmLetraCambioVistaPrevia.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FrmLetraCambio.resx">
-      <DependentUpon>FrmLetraCambio.cs</DependentUpon>
+    <EmbeddedResource Include="Facturacion\frmLetraCambio.resx">
+      <DependentUpon>frmLetraCambio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,6 +121,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Almacen\" />
+    <Folder Include="Mantenimiento\" />
     <Folder Include="Reportes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
