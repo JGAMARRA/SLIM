@@ -17,34 +17,9 @@ namespace SLIM.App
             InitializeComponent();
         }
 
-        private void movimientosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            //Form frm = new frmMovimiento();
-            //frm.Show();
-        }
 
-        private void generarFacturaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Form frm = new frmGenerarDocumentoPago();
-            //frm.ShowDialog();
-        }
-
-        private void stockXArticuloToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Form frm = new frmConsultaStockArticulo();
-            //frm.ShowDialog();
-        }
-
-        private void movimientoXArticuloToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Form frm = new frmConsultaMovimientoArticulo();
-            //frm.ShowDialog();
-        }
-
-        private void imprimirGuiaRemisiónToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Form frm = new frmGenerarGuia();
-            //frm.ShowDialog();
         }
 
         private void generarLetraToolStripMenuItem_Click(object sender, EventArgs e)
