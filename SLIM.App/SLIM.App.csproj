@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Facturacion\frmDocumentoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\frmDocumentoPago.Designer.cs">
+      <DependentUpon>frmDocumentoPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Facturacion\frmLetraCambio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     <Compile Include="Vistas\FrmLetraCambioVistaPrevia.Designer.cs">
       <DependentUpon>FrmLetraCambioVistaPrevia.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Facturacion\frmDocumentoPago.resx">
+      <DependentUpon>frmDocumentoPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Facturacion\frmLetraCambio.resx">
       <DependentUpon>frmLetraCambio.cs</DependentUpon>
     </EmbeddedResource>

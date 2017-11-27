@@ -131,6 +131,7 @@
             this.generarFacturaToolStripMenuItem.Name = "generarFacturaToolStripMenuItem";
             this.generarFacturaToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.generarFacturaToolStripMenuItem.Text = "Generar Documento Pago";
+            this.generarFacturaToolStripMenuItem.Click += new System.EventHandler(this.generarFacturaToolStripMenuItem_Click);
             // 
             // generarLetraToolStripMenuItem
             // 
@@ -168,31 +169,31 @@
             // productoToolStripMenuItem
             // 
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            this.productoToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.productoToolStripMenuItem.Text = "Producto";
             // 
             // transportistaToolStripMenuItem
             // 
             this.transportistaToolStripMenuItem.Name = "transportistaToolStripMenuItem";
-            this.transportistaToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.transportistaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.transportistaToolStripMenuItem.Text = "Transportista";
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             // 
             // proveedorToolStripMenuItem
             // 
             this.proveedorToolStripMenuItem.Name = "proveedorToolStripMenuItem";
-            this.proveedorToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.proveedorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.proveedorToolStripMenuItem.Text = "Proveedor";
             // 
             // almacenToolStripMenuItem1
             // 
             this.almacenToolStripMenuItem1.Name = "almacenToolStripMenuItem1";
-            this.almacenToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
+            this.almacenToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.almacenToolStripMenuItem1.Text = "Almacen";
             // 
             // seguridadToolStripMenuItem

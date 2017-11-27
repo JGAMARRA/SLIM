@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SLIM.App.Facturacion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,13 @@ namespace SLIM.App
         private void generarLetraToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmLetraCambio frm = new FrmLetraCambio();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void generarFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDocumentoPago frm = new frmDocumentoPago();
             frm.MdiParent = this;
             frm.Show();
         }
