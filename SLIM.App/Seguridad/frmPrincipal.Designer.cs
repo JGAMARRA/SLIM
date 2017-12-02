@@ -81,6 +81,7 @@
             this.movimientosToolStripMenuItem.Name = "movimientosToolStripMenuItem";
             this.movimientosToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.movimientosToolStripMenuItem.Text = "Movimientos";
+            this.movimientosToolStripMenuItem.Visible = false;
             // 
             // consultasToolStripMenuItem
             // 
@@ -91,6 +92,7 @@
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.consultasToolStripMenuItem.Text = "Consultas";
+            this.consultasToolStripMenuItem.Visible = false;
             // 
             // stockXArticuloToolStripMenuItem
             // 
@@ -115,6 +117,7 @@
             this.imprimirGuiaRemisiónToolStripMenuItem.Name = "imprimirGuiaRemisiónToolStripMenuItem";
             this.imprimirGuiaRemisiónToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.imprimirGuiaRemisiónToolStripMenuItem.Text = "Guia Remisión";
+            this.imprimirGuiaRemisiónToolStripMenuItem.Visible = false;
             // 
             // facturaciónToolStripMenuItem
             // 
@@ -131,6 +134,7 @@
             this.generarFacturaToolStripMenuItem.Name = "generarFacturaToolStripMenuItem";
             this.generarFacturaToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.generarFacturaToolStripMenuItem.Text = "Generar Documento Pago";
+            this.generarFacturaToolStripMenuItem.Visible = false;
             this.generarFacturaToolStripMenuItem.Click += new System.EventHandler(this.generarFacturaToolStripMenuItem_Click);
             // 
             // generarLetraToolStripMenuItem
@@ -138,6 +142,7 @@
             this.generarLetraToolStripMenuItem.Name = "generarLetraToolStripMenuItem";
             this.generarLetraToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.generarLetraToolStripMenuItem.Text = "Generar Letra";
+            this.generarLetraToolStripMenuItem.Visible = false;
             this.generarLetraToolStripMenuItem.Click += new System.EventHandler(this.generarLetraToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem1
@@ -147,6 +152,7 @@
             this.consultasToolStripMenuItem1.Name = "consultasToolStripMenuItem1";
             this.consultasToolStripMenuItem1.Size = new System.Drawing.Size(211, 22);
             this.consultasToolStripMenuItem1.Text = "Consultas";
+            this.consultasToolStripMenuItem1.Visible = false;
             // 
             // documentoDePagoPorFechaToolStripMenuItem
             // 
@@ -171,30 +177,35 @@
             this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
             this.productoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.productoToolStripMenuItem.Text = "Producto";
+            this.productoToolStripMenuItem.Visible = false;
             // 
             // transportistaToolStripMenuItem
             // 
             this.transportistaToolStripMenuItem.Name = "transportistaToolStripMenuItem";
             this.transportistaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.transportistaToolStripMenuItem.Text = "Transportista";
+            this.transportistaToolStripMenuItem.Visible = false;
             // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
             this.clienteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
+            this.clienteToolStripMenuItem.Visible = false;
             // 
             // proveedorToolStripMenuItem
             // 
             this.proveedorToolStripMenuItem.Name = "proveedorToolStripMenuItem";
             this.proveedorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.proveedorToolStripMenuItem.Text = "Proveedor";
+            this.proveedorToolStripMenuItem.Visible = false;
             // 
             // almacenToolStripMenuItem1
             // 
             this.almacenToolStripMenuItem1.Name = "almacenToolStripMenuItem1";
             this.almacenToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.almacenToolStripMenuItem1.Text = "Almacen";
+            this.almacenToolStripMenuItem1.Visible = false;
             // 
             // seguridadToolStripMenuItem
             // 
@@ -208,14 +219,17 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Visible = false;
             // 
             // perfilesToolStripMenuItem
             // 
             this.perfilesToolStripMenuItem.Name = "perfilesToolStripMenuItem";
-            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.perfilesToolStripMenuItem.Text = "Perfiles";
+            this.perfilesToolStripMenuItem.Visible = false;
+            this.perfilesToolStripMenuItem.Click += new System.EventHandler(this.perfilesToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 

@@ -66,6 +66,18 @@
     <Compile Include="Seguridad\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Seguridad\frmPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\frmPerfil.Designer.cs">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\frmPerfilConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\frmPerfilConsulta.Designer.cs">
+      <DependentUpon>frmPerfilConsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Seguridad\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +108,12 @@
     </Compile>
     <EmbeddedResource Include="Seguridad\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\frmPerfil.resx">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\frmPerfilConsulta.resx">
+      <DependentUpon>frmPerfilConsulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Seguridad\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

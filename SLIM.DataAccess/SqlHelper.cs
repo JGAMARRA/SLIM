@@ -58,7 +58,7 @@ namespace SLIM.DataAccess
 
             // Set command type
             cmd.CommandType = type;
-
+            if (args!=null) { 
             // Construct SQL parameters
             for (int i = 0; i < args.Length; i++)
             {
@@ -74,6 +74,7 @@ namespace SLIM.DataAccess
                     cmd.Parameters.Add((SqlParameter)args[i]);
                 }
                 else throw new ArgumentException("Invalid number or type of arguments supplied");
+            }
             }
             return cmd;
         }

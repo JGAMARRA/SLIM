@@ -2,12 +2,6 @@
 using SLIM.BusinessLogic.Seguridad;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -16,6 +10,7 @@ namespace SLIM.App
     public partial class frmLogin : Form
     {
         LoginBL oLogin = new LoginBL();
+        AccesoBL oAcceso = new AccesoBL();
         public frmLogin()
         {
             InitializeComponent();
@@ -24,9 +19,10 @@ namespace SLIM.App
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             Usuario oUsuario = oLogin.GetUsuario(txtUsuario.Text.TrimEnd(), txtClave.Text.TrimEnd());
+            List<Acceso> lAccesos = oAcceso.GetAccesos(oUsuario.idPerfil);
             if (oUsuario != null)
             {
-                Form frm = new frmPrincipal();
+                Form frm = new frmPrincipal(lAccesos);
                 frm.ShowDialog();
                 this.Close();
             }

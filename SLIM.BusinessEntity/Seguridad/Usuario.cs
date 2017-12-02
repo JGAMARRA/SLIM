@@ -1,68 +1,64 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SLIM.BusinessEntity.Seguridad
+﻿namespace SLIM.BusinessEntity.Seguridad
 {
     public class Usuario
     {
-        int id;
-        string nomUsuario;
-        string clvUsuario;
-        int estado;
+        public int id { get; set; }
+        public string nomUsuario { get; set; }
+        public string clvUsuario { get; set; }
+        public int estado { get; set; }
+        public int idPerfil { get; set; }
 
-        public int Estado
-        {
-            get
-            {
-                return estado;
-            }
+        //    public int Estado
+        //    {
+        //        get
+        //        {
+        //            return estado;
+        //        }
 
-            set
-            {
-                estado = value;
-            }
-        }
+        //        set
+        //        {
+        //            estado = value;
+        //        }
+        //    }
 
-        public string ClvUsuario
-        {
-            get
-            {
-                return clvUsuario;
-            }
+        //    public string ClvUsuario
+        //    {
+        //        get
+        //        {
+        //            return clvUsuario;
+        //        }
 
-            set
-            {
-                clvUsuario = value;
-            }
-        }
+        //        set
+        //        {
+        //            clvUsuario = value;
+        //        }
+        //    }
 
-        public string NomUsuario
-        {
-            get
-            {
-                return nomUsuario;
-            }
+        //    public string NomUsuario
+        //    {
+        //        get
+        //        {
+        //            return nomUsuario;
+        //        }
 
-            set
-            {
-                nomUsuario = value;
-            }
-        }
+        //        set
+        //        {
+        //            nomUsuario = value;
+        //        }
+        //    }
 
-        public int Id
-        {
-            get
-            {
-                return id;
-            }
+        //    public int Id
+        //    {
+        //        get
+        //        {
+        //            return id;
+        //        }
 
-            set
-            {
-                id = value;
-            }
-        }
+        //        set
+        //        {
+        //            id = value;
+        //        }
+        //    }
+        //}
     }
 }

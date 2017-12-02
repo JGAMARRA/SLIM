@@ -42,11 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Facturacion\DocumentoPagoDA.cs" />
+    <Compile Include="Seguridad\AccesoDA.cs" />
+    <Compile Include="Seguridad\PerfilDA.cs" />
     <Compile Include="SqlHelper.cs" />
     <Compile Include="Facturacion\LetraCambioDA.cs" />
     <Compile Include="Seguridad\LoginDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SLIM.BusinessEntity\SLIM.BusinessEntity.csproj">
