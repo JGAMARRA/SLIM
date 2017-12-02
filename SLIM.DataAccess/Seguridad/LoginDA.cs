@@ -11,6 +11,11 @@ namespace SLIM.DataAccess
         SqlHelper oSHelper = new SqlHelper();
         public Usuario GetUsuario(string usuario, string clave)
         {
+
+            ADONetHelper.SqlServer.SqlServerClient sql;
+            //sql.ConnectionString = "";
+            //sql.ExecuteNonQuery("");
+
             SqlParameter[] parameters = new SqlParameter[]
             {
                 new SqlParameter() {ParameterName = "@usuario", SqlDbType = SqlDbType.VarChar, Direction = ParameterDirection.Input, Value= usuario},
