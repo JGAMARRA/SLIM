@@ -5,6 +5,6 @@
         public int idAcceso { get; set; }
         public string nomAcceso { get; set; }
         public string nomModulo { get; set; }
-        public int estado { get; set; }
+        public bool estado { get; set; }
     }
 }

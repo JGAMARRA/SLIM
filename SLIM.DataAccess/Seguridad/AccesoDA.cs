@@ -27,7 +27,7 @@ namespace SLIM.DataAccess.Seguridad
                     oAcceso.idAcceso = Int32.Parse(sdr[0].ToString());
                     oAcceso.nomAcceso = sdr[1].ToString();
                     oAcceso.nomModulo= sdr[2].ToString();
-                   oAcceso.estado= Int32.Parse(sdr[3].ToString());
+                   oAcceso.estado= Boolean.Parse(sdr[3].ToString());
                 }
                 lAccesos.Add(oAcceso);
             }

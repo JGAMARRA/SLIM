@@ -17,7 +17,7 @@ namespace SLIM.App
             {
                 // nomAcceso de la base de datos y control del formulario principal
                 // en el formulario todos los menus deben figurar como no visibles 
-                if (item.estado==1) {
+                if (item.estado==true) {
                 
                 if (item.nomModulo == "Almacen")
                 {
